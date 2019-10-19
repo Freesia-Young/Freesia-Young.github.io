@@ -1,0 +1,347 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+
+ul,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;  /*清除a标签自带的下划线*/
+	color:#000;
+	
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float:right;
+}
+
+        /*顶部导航开始*/
+        .top-nav{
+            height: 26px;
+            background: #F7F7F7;
+            border-bottom: 1px solid #D8D8D8;
+        }
+        .top-nav-con{
+            width: 970px;
+            margin: 0 auto; /*在父盒子居中*/
+            height: 26px;
+        }
+        .top-nav-r ul li{   /*设置.top-nav-r下ul的li的样式*/
+            float: left;
+            height: 26px;
+            line-height: 26px;
+
+        }
+        .top-nav-l{
+            height: 26px;
+            line-height: 26px;
+        }
+
+        .top-nav-r ul li a{
+            display: inline-block;
+            height: 26px;
+            background: url(../img/images/sj.png) no-repeat right; /*right指背景处于内容右侧*/
+            padding:0 10px;
+
+        }
+        
+   		/*logo样式*/
+   		
+		.logo{
+			height: 90px;
+			
+			}
+		
+		.logo-con{
+			width: 970px;
+            margin: 0 auto; /*在父盒子居中*/
+            height: 90px;
+		}
+
+		.search{
+			border: solid;
+			border-width: thin;
+			width: 590px;
+			height: 35px;
+			margin-top: 25px;
+			border-color: darkgray;
+			padding: 5px 5px 5px 4px;
+		}
+		/*后代选择器+属性选择器*/
+		.search input[type="text"]{
+            width: 480px;
+            height: 30px;
+            border:1px solid #A6A6A6;
+            border-right: 0 none;
+            vertical-align: middle;
+        }
+        .search input[type="button"]{
+            width: 100px;
+            height: 30px;
+            background: url(../img/images/serch.png);
+            vertical-align: middle;
+			}
+			
+		/*主导航部分样式*/
+      	.nav{
+      		width: 970px;
+            height: 25px;
+            margin: 10px auto;
+            border-bottom: 2px solid #0266a3;
+      		
+      	}
+      	
+      	
+      	.nav ul li{
+      		
+      		float: left;
+      	}
+      	
+       	.nav ul li a{     /* 实例看到的是蓝色有间隔的一排,所以样式设置选的是真正有内容的a标签*/
+      		display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding:0 30px;    
+            color: #0266a3;
+      		      		
+      	}
+      	.nav ul li a:hover{
+            background:#0266a3;
+            color:#fff;
+        }
+        
+        /*宠物市场部分样式*/
+       .mar{
+       		width: 970px;
+            height:250px;
+            margin: 10px auto;
+       }
+       #marbox{
+       		width: 150px;
+            height:250px;
+       }
+       #marbox1{
+       		width: 150px;
+            height:250px;
+       }
+       
+      #marbox li{
+      	height: 35px;
+      }
+      
+      	
+      #mar1{
+      	background-color: #0266A3;
+      	color: white;
+      	padding-left: 15px;
+      	line-height: 35px;
+      }
+      .marli{
+      	line-height: 35px;
+      	padding-left: 25px;
+      	background:#EBF0F6 url(../img/images/icon_1.png) left no-repeat;
+      }
+      
+      .bud{
+      		width: 970px;
+            height:30px;
+            margin: 10px auto;
+            background-color: #ECF1F7;
+            border-top: 3px solid #C3D7E4;
+            padding-left: 28px;
+            line-height: 30px;
+            font-weight: 700;
+            
+      }
+      
+      
+      /*狗狗种类列表*/
+     .pro_con{
+     		width: 970px;
+            margin: 0 auto; 
+            height: 400px;
+     }
+     
+     .pro_left{
+     	width:740px;
+     	height: 400px;
+     	border: 2px solid #D8D8D8;
+     	
+     }
+     
+     .pro_right{
+     	width:205px;
+     	height: 400px;
+     	border: 1px solid #D8D8D8;
+     	}
+     	
+     #pro_right_head{
+     	height:30px;
+     	padding-left: 8px;
+     	line-height: 30px;
+     	background: #F7F7F7;
+     	border-bottom:1px solid #D8D8D8 ;
+     	font-size:15px;
+     }
+     
+     #pro_right_list{
+     	width: 370px;
+ 		padding-top: 15px;
+     }
+     #pro_right_list ul li{
+     		height: 27px;
+     		padding-left: 22px;
+     		background: url(../img/images/li_bg.png) no-repeat 10px 6px;
+     }
+     #pro_right_list ul li a:hover{
+     		color:#ff0000;
+            text-decoration: underline;
+     }
+    
+     .pro_left_top{
+     	width: 740px;
+     	height: 195px;
+     	
+     }
+     
+     #pro_line{
+     	border-top: 2px solid black;
+        margin: 0 5px;
+     }
+     
+   
+     .pro_left_box{
+     	width: 370px;
+     	height:195px;
+     	
+     	
+     }
+     
+     .pro_box{
+     	width: 180px;
+     	height:195px;
+     }
+     .pro_pic{
+     	margin-left:65px;
+     	margin-top: 20px;
+     }
+     
+     .pro_search input{
+     	width: 100px;
+     	height: 30px;
+     	margin-left: 65px;
+     	margin-top: 60px;
+     	background: url(../img/images/buy.png) no-repeat;
+     }
+	
+	.txt1{
+		height:20px;
+		margin-top:20px;
+		
+	}
+	
+	.txt2{
+		height: 45px;
+		margin-top: 10px;
+			
+		}
+	.txt3{margin-top: 20px;}
+	.txt3 span{color: red;}
+	.txt3 del{margin-left: 10px;}
+	.txt4 span{color: red;}
+	.txt4{margin-top: 28px;}
+	
+	
+	/*狗粮列表*/
+	.dogFood_con{
+			width: 970px;
+            margin: 0 auto; 
+            height: 370px;
+	}
+	.dogFood-left{
+			width: 720px;
+			height: 370px;
+	}
+	.dogFood-left-top{
+		width: 720px;
+		height:30px;
+		border-bottom: 2px solid dodgerblue;
+	}
+	.dogFood-left-top p a{color: dodgerblue;float: right;}
+	.dogFood-left-bot{
+		width: 720px;
+		height: 340px;
+	}
+	.dogFood-left-box{
+		width: 180px;
+		height: 340px;
+	}
+	
+	.dogFood-left-box img{
+		padding-left:12px;
+		padding-top: 8px;
+	}
+	.txts1{
+		font-size: 13px;
+		margin-top: 10px;
+		padding-left:12px;
+	}
+	.txts2{
+		font-size: 13px;
+		padding-left:51px;
+	}
+	
+	.txts3{
+		font-size: 13px;
+		margin-top: 20px;
+		color:#999;
+	}
+	.txts4{
+		font-size: 13px;
+		margin-top: 12px;
+		color:#999;
+		padding-left: 48px;
+	}
+	
+	.txts5{
+		font-size: 13px;
+		margin-top: 12px;
+		padding-left: 48px;
+	}
+	.txts4 span{
+		color: red;
+	}
+	.txts5 span{
+		color: red;
+	}
+	
+	
+	
+	
+	.dogFood-right{
+		height: 370px;
+		width: 220px;
+		
+	}
+     .dogFood-right img{
+     	width: 100%;height: 100%;
+     }
+     
+     
+ 	.copyright{
+            height: 91px;
+            text-align: center;
+        }
+     
+     .copyright p.copy{
+            height: 24px;
+            margin-top: 13px;
+        }
+      
+
+      
+      
